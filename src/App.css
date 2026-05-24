@@ -1,0 +1,138 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #fff;
+}
+
+.card {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(10px);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.city-label {
+  font-size: 14px;
+  opacity: 0.75;
+  margin-bottom: 6px;
+}
+
+h1 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.city-badge {
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(59, 130, 246, 0.18);
+  color: #93c5fd;
+  font-weight: 600;
+}
+
+.current-weather {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 24px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.temp {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.details {
+  font-size: 18px;
+  line-height: 1.7;
+  opacity: 0.95;
+}
+
+.condition {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.forecast-section {
+  margin-top: 24px;
+}
+
+.forecast-section h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.forecast-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.forecast-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 18px;
+  padding: 16px;
+}
+
+.forecast-date {
+  font-size: 13px;
+  opacity: 0.7;
+  margin-bottom: 8px;
+}
+
+.forecast-condition {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.forecast-temp {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.forecast-rain {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.status {
+  font-size: 20px;
+  text-align: center;
+}
+
+.error {
+  color: #fca5a5;
+  margin-top: 12px;
+}
+
+@media (max-width: 640px) {
+  .header,
+  .current-weather {
+    flex-direction: column;
+  }
+
+  .temp {
+    font-size: 60px;
+  }
+}

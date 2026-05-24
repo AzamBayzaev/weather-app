@@ -4,7 +4,7 @@ import "./App.css";
 const CITY_NAME = "Худжанд";
 const COUNTRY_NAME = "Таджикистан";
 
-// Координаты Худжанда
+
 const LAT = 40.2833;
 const LON = 69.6333;
 
